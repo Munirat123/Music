@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    margin: auto    
+}
+
+body{
+    background-color: rgb(2, 85, 85);
+}
+
+.container nav{
+    background-color: rgb(66, 24, 104);
+    margin-top: -20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+.home-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.logo{
+    padding-top: 50px;
+    color:teal;
+}
+
+.logo:hover{
+    color:white;
+    transition: 0.1s ease-in;
+    cursor: pointer;    
+}
+
+.item{
+    display: inline-flex;
+    list-style: none;
+    margin-top: 50px;
+    margin-right: 8px;
+    margin-left:20px;
+    color: teal;
+}
+
+.item:hover{
+    color:white;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+img{
+    width: 25px;
+    height: 23px;
+    margin-right: 20px;
+}
+
+/* .banner{
+    background-color: blueviolet;
+} */
+
+.banner img{
+    width: 900px;
+    height: 350px;
+    margin-left: 305px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    border: 5px solid teal
+}
+
+#cover{
+    width: 300px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 40px;
+    border: 3px solid black;
+}
+
+
+.button button{
+    padding: 10px 25px;
+    line-height: 20px;
+    min-width: 80px;
+    cursor: pointer;
+    border: none;
+    background-color: teal;
+    color: rgb(66, 24, 104);
+    border-radius: 20px;
+}
+
+.button button:hover{
+    background-color: rgb(9, 217, 217);
+    color: rgb(156, 59, 247);
+    line-height: 30px;
+    min-width: 90px;
+    transition: 0.1s ease-in;
+}
+
+.audio{
+    display: flex;
+    background-color: rgb(25, 15, 35);
+    padding-bottom: 50px;
+}
+.button{
+    margin-top: 400px;
+    margin-left: -280px;
+}
+
+.artist{
+    background-color: teal;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+}
+
+#artist{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+
+.artist h2{
+    margin-left: 55px;
+}
+
+.artist p{
+    margin-left: 53px;
+    color: white;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+footer h5{
+    margin-bottom: 30px;
+    margin-right: 6px;
+}
+
+footer h4{
+    margin-bottom: 30px;
+    color: aqua;
+}
+
+footer h4:hover{
+    color:thistle;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.1s ease-in;
+}
+
+footer img{
+    margin-bottom: 30px;
+}
+
+footer img:hover{
+    width: 35px;
+    height: 33px;
+    transition: ease-in;
+    cursor: pointer;
+}
+
+footer p{
+    margin-bottom: 30px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 375px){
+    .home-nav{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    }
+
+    .item{
+        font-size: 13px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .logo{
+        font-size: 13px;
+    }
+
+    .banner img{
+        width: 300px;
+        height: 200px;
+        margin-left: 40px;
+    }
+
+    .audio{
+        display: block;
+    }
+
+    .button{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 90px;
+        margin-left: 5px;
+    }
+
+    .artist{
+        padding-left: 30px;
+        padding-right: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #artist{
+        margin-left: 30px;
+        width: 170px;
+        height: 170px;
+    }
+
+    .artist h2{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .artist p{
+        font-size: 11px;
+        text-align: center;
+    }
+
+    #cover{
+        width: 270px;
+        height: 270px;
+        margin-left: 55px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .banner img{
+        margin-left: 84px;
+        width: 600px;
+        height: 250px;
+    }
+/* 
+    #cover{
+        width: 250px;
+        height: 250px;
+    } */
+
+
+    .artist{
+        margin-left: -50px;
+        margin-right: 12px;
+        margin-top: 79px;
+        margin-bottom: 90px;
+    }
+
+    #artist{
+        width: 150px;
+        height: 150px;
+    }
+
+    .artist h2{
+        margin-left: 30px;
+    }
+
+    .artist p{
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    .banner img{
+        margin-left: 305px;
+        width: 900px;
+        height: 350px;
+    }
+}

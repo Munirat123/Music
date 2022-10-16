@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>MUNIMUSIC Webpage</title>
+    <link rel="shortcut icon" href="Music logo.webp" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <nav class="home-nav">
+                <div class="logo">MUNIMUSIC</div>
+                <ul>
+                    <li class="item">About</li>
+                    <li class="item">Search Music</li>
+                    <li class="item">Contact</li>
+                </ul>
+            </nav>   
+            <div class="banner">
+                <img src="Music Banner3.png" alt="Banner">
+            </div>
+            </section>
+            <section class="music">
+                <div class="audio">
+                    <img src="Happier than ever album cover.png" alt="Cover" id="cover">
+                    <audio id="audio">
+                        <source src="Billie Eilish - Happier Than Ever.mp3" type="audio/mp3">
+                    </audio>
+                    <div class="button">
+                    <button id="playPauseBTN" onclick="playPause()">Play &#9658;</button>
+                    &nbsp;
+                    &nbsp;
+                    <button onclick="stop()">Stop &#9611;</button>
+                    </div>
+                    <div class="artist">
+                    <img src="Billie Eilish.jpg" alt="Artist" id="artist">
+                    <h2>Billie Eilish</h2>
+                    <p>Happier Than Ever</p>
+                    </div>
+                </div>
+            </section>
+            <script src="audio.js"></script>
+        </main>
+        <footer>
+            <h5>Contact Us For More At:</h5>
+            <h4>munimusic@gmail.com</h4>
+            <img src="74021-network-icons-media-fb-computer-facebook-social.png" alt="facebook" class="social">
+            <img src="74272-and-business-for-institute-media-company-high.png" alt="tweeter" class="social">
+            <img src="74409-instagram-media-social-blog-advertising-marketing-logo.png" alt="instagram" class="social">
+            <img src="74560-icons-media-computer-iphone-social-whatsapp-emoji.png" alt="whatsapp" class="social">
+            <p>MUNI &copy;2022</p>
+        </footer>
+</body>
+</html>
